@@ -1,0 +1,1 @@
+module.exports = "#define GLSLIFY 1\nstruct Foo {\n  vec3 bar;\n};\n\nstruct Foo2 {\n  vec3 bar;\n};\n\nvoid main() {\n  bar = Foo;\n}";
