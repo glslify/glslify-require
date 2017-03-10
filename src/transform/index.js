@@ -19,18 +19,16 @@ module.exports = transformTools.makeStringTransform("glslify-require", options,
 
       let processDependency = function (dependency) {
         for (let id in dependency.deps) {
-          if (dependency.deps.hasOwnProperty(id)) {
-            let subDependency = dependencies.find(function (item) {
-              return (item.id == dependency.deps[id]);
-            });
+          let subDependency = dependencies.find(function (item) {
+            return (item.id == dependency.deps[id]);
+          });
 
-            results.push({
-              id: id,
-              file: subDependency.file
-            });
+          results.push({
+            id: id,
+            file: subDependency.file
+          });
 
-            processDependency(subDependency);
-          }
+          processDependency(subDependency);
         }
       };
 
