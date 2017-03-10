@@ -1,5 +1,6 @@
 # glslify-require [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > 
+**Browserify plugin to require() OpenGL Shading Language (GLSL) files**
 
 *NOTE*: Has not been tested on Node below version 6.0.0. Please report any bugs you may find.
 
