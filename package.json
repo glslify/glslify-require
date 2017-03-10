@@ -14,7 +14,7 @@
   },
   "author": "Eric MORAND",
   "repository": "ericmorand/glslify-require",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "browserify-transform-tools": "^1.7.0",
     "glslify": "^6.0.1",
