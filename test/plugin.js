@@ -20,12 +20,16 @@ tap.test('plugin', function (test) {
       .plugin(plugin)
       .bundle(function (err, buf) {
         if (err) {
-          t.fail(err);
+          t.fail(err.message);
         }
         else {
+          t.equal(deps.length, 5);
+
           let wantedDeps = [
             path.resolve('test/fixtures/main.glsl'),
-            path.resolve('test/fixtures/foo.glsl')
+            path.resolve('test/fixtures/foo.glsl'),
+            path.resolve('test/fixtures/sub/bar.glsl'),
+            path.resolve('test/fixtures/secondary.glsl'),
           ];
 
           wantedDeps.forEach(function (wantedDep) {

@@ -1,9 +1,7 @@
-struct Foo {
-  vec3 bar;
-};
+#pragma glslify: bar = require(./sub/bar)
 
-struct Foo2 {
-  vec3 bar;
-};
+float foo() {
+  return bar;
+}
 
-#pragma glslify: export(Foo)
+#pragma glslify: export(foo)
