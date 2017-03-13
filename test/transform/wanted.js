@@ -1,1 +1,1 @@
-module.exports = "#define GLSLIFY 1\nstruct Foo {\n  vec3 bar;\n};\n\nstruct Foo2 {\n  vec3 bar;\n};\n\nvoid main() {\n  bar = Foo;\n}";
+module.exports = "#define GLSLIFY 1\nfloat v = 5;\n\nfloat foo() {\n  return v;\n}\n\nvoid main() {\n  foobar = foo();\n}";

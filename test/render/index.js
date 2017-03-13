@@ -1,1 +1,4 @@
-module.exports = require('../fixtures/main.glsl');
+module.exports = {
+  main: require('../fixtures/main.glsl'),
+  secondary: require('../fixtures/secondary.glsl')
+};
