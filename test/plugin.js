@@ -10,7 +10,7 @@ tap.test('plugin', function (test) {
   test.test('should render a valid bundle', function (t) {
     let browserify = new Browserify();
     let deps = [];
-    let file = path.resolve('test/render/index.js');
+    let file = path.resolve('test/plugin/index.js');
 
     browserify
       .add(file)
@@ -23,8 +23,6 @@ tap.test('plugin', function (test) {
           t.fail(err);
         }
         else {
-          t.equal(deps.length, 3);
-
           let wantedDeps = [
             path.resolve('test/fixtures/main.glsl'),
             path.resolve('test/fixtures/foo.glsl')
