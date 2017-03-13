@@ -1,6 +1,6 @@
 {
   "name": "glslify-require",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Browserify plugin to require() OpenGL Shading Language (GLSL) files",
   "keywords": [
     "browserify",
